@@ -1,0 +1,5 @@
+# Table VIII / Fig. 9: privacy budget sweep. Sweep privacy.target_epsilon in 10,1,0.1
+# and run with privacy.enabled=false for the "No DP" column.
+base: mofedcyber.yaml
+name: privacy
+membership_inference: true

@@ -1,0 +1,25 @@
+# One-minute CPU sanity check on synthetic data (also used by CI).
+base: mofedcyber.yaml
+name: smoke
+data:
+  dataset: synthetic
+  synthetic_samples: 3000
+  synthetic_features: 24
+  synthetic_classes: 5
+federation:
+  num_clients: 10
+  sampling_rate: 0.7
+  rounds: 10
+  local_epochs: 2
+  batch_size: 32
+model:
+  embed_dim: 32
+  num_heads: 4
+  ffn_dim: 64
+  head_hidden: 64
+privacy:
+  enabled: false
+apgd:
+  archive_size: 16
+  reference_partitions: 4
+  adapt_every: 5

@@ -1,0 +1,6 @@
+# Fig. 10: label-flipping Byzantine clients. Sweep attack.byzantine_fraction in 0..0.4.
+base: mofedcyber.yaml
+name: byzantine
+attack:
+  kind: label_flip           # label_flip | sign_flip | gaussian | alie
+  byzantine_fraction: 0.1

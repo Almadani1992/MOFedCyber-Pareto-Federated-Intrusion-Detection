@@ -1,0 +1,5 @@
+# Fig. 13: sweep federation.num_clients in 10,25,50,100,200,300,400,500
+base: mofedcyber.yaml
+name: scalability
+federation:
+  rounds: 20

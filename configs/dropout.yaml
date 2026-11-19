@@ -1,0 +1,5 @@
+# Fig. 11: per-round client dropout. Sweep federation.dropout_rate in 0..0.5.
+base: mofedcyber.yaml
+name: dropout
+federation:
+  dropout_rate: 0.1

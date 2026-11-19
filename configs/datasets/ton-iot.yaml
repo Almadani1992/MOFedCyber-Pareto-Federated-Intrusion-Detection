@@ -1,0 +1,5 @@
+# Table VI: ton-iot
+base: ../mofedcyber.yaml
+name: table4_ton-iot
+data:
+  dataset: ton-iot

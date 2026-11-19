@@ -1,0 +1,5 @@
+# Table VI: edge-iiotset
+base: ../mofedcyber.yaml
+name: table4_edge-iiotset
+data:
+  dataset: edge-iiotset

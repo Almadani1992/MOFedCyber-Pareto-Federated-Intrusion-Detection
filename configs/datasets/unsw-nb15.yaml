@@ -1,0 +1,5 @@
+# Table VI: unsw-nb15
+base: ../mofedcyber.yaml
+name: table4_unsw-nb15
+data:
+  dataset: unsw-nb15

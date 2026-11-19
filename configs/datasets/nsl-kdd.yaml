@@ -1,0 +1,5 @@
+# Table VI: nsl-kdd
+base: ../mofedcyber.yaml
+name: table4_nsl-kdd
+data:
+  dataset: nsl-kdd

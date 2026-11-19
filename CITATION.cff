@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "MOFedCyber: Pareto-aggregated federated intrusion detection (reference implementation)"
+version: 1.0.0
+license: MIT
+authors:
+  - family-names: Al-madani
+    given-names: Ali Mansour
+  - family-names: Ying
+    given-names: Xu
+preferred-citation:
+  type: article
+  title: "MOFedCyber: Convergence-Guaranteed Pareto Aggregation for Private and Byzantine-Resilient Federated Intrusion Detection at the IoT-5G Edge"
+  authors:
+    - family-names: Al-madani
+      given-names: Ali Mansour
+    - family-names: Ying
+      given-names: Xu
+  journal: "IEEE Access"
+  year: 2026
+  notes: "Under review"
+repository-code: "https://github.com/almadani1992/MOFedCyber-Pareto-Federated-Intrusion-Detection"

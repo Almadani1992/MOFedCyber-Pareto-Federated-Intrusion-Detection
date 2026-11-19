@@ -1,0 +1,5 @@
+# Table VI: cse-cic-ids2018
+base: ../mofedcyber.yaml
+name: table4_cse-cic-ids2018
+data:
+  dataset: cse-cic-ids2018

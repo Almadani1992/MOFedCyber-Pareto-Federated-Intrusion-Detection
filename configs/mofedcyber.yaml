@@ -1,0 +1,49 @@
+# Main configuration: reproduces Table V of the paper (CSE-CIC-IDS2018).
+name: main
+method: mofedcyber
+seed: 0
+eval_every: 5
+data:
+  dataset: cse-cic-ids2018
+  root: data/raw
+  max_samples: null          # set e.g. 2000000 for a faster, class-stratified subset
+federation:
+  num_clients: 100
+  sampling_rate: 0.3
+  rounds: 200
+  local_epochs: 3
+  batch_size: 128
+  dirichlet_alpha: 0.5
+model:
+  embed_dim: 256
+  num_heads: 8
+  ffn_dim: 1280
+  head_hidden: 1280
+optim:
+  local_optimizer: adam
+  local_lr: 0.001
+privacy:
+  enabled: true
+  clip_norm: 1.0
+  target_epsilon: 1.0        # sigma_z is calibrated automatically (17.3 for these settings)
+  delta: 1.0e-5
+  noise_on: retained
+compression:
+  enabled: true
+  ratio: 0.2
+  mask: topk
+apgd:
+  normalize: l2
+  min_detection_weight: 0.0
+  archive_size: 64
+  gamma: 1.0
+robust:
+  aggregator: bulyan
+baseline:
+  prox_mu: 0.01              # FedProx
+  sgd_lr: 0.05               # SCAFFOLD (uses SGD)
+  mgda_epsilon: 0.1          # FedMGDA+
+  eps_f2: 1.0                # MOO-FL-eC: F2 <= eps_f2 x (first observed F2)
+  eps_f3: 1.0                # MOO-FL-eC: F3 <= eps_f3 x (first observed F3)
+  dual_lr: 0.1
+  dual_max: 1.0

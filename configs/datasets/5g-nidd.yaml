@@ -1,0 +1,5 @@
+# Table VI: 5g-nidd
+base: ../mofedcyber.yaml
+name: table4_5g-nidd
+data:
+  dataset: 5g-nidd

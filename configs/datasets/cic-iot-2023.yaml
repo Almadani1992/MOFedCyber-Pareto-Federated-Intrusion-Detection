@@ -1,0 +1,5 @@
+# Table VI: cic-iot-2023
+base: ../mofedcyber.yaml
+name: table4_cic-iot-2023
+data:
+  dataset: cic-iot-2023
